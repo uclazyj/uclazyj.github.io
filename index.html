@@ -3,14 +3,65 @@
 <html lang="en">
     <head>
         <title>
-            geolocation
+            html_notes
         </title>
     </head>
     <body>
+        <h1>Yujian's HTML notes</h1>
+        <p>I took some notes from CS50 examples, which demonstrate some basic usage of various html features.</p>
+
+        <h2>Unordered list</h2>
+        <ul>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ul>
+
+        <h2>Ordered list</h2>
+        <ol>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ol>
+
+        <h2>Table</h2>
+        <table>
+            <!-- tr: table row -->
+            <tr>
+                <!-- td: table data -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <!-- <h2>Image</h2>
+        <img alt = "a picture of a cat" src="cat.jpg"> -->
+
+        <!-- <h2>Video</h2>
+        <video controls>
+            <source src="wave.MOV">
+        </video> -->
+
+
+        <h2>Links</h2>
+        Visit CS50 <a href="https://www.youtube.com/watch?v=ciz2UaifaNM&list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4&index=10&ab_channel=CS50">Lecture 8 - HTML, CSS, JavaScript</a>
+
+        <!-- Below is your location:
         <script>
             navigator.geolocation.getCurrentPosition(function(position){
                 document.write(position.coords.latitude + ", " + position.coords.longitude)
             });
-        </script>
+        </script> -->
     </body>
 </html>
