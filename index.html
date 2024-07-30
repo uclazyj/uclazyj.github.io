@@ -2,13 +2,20 @@
 
 <html lang="en">
     <head>
+        <!-- It is ok to add css style here directly. But it is better to factor it out in a separate .css file.
+        <style>
+            #validator{
+                color: red;
+            }
+        </style> -->
+        <link href="mycss.css" rel="stylesheet">
         <title>
             html_notes
         </title>
     </head>
     <body>
         <h1>Yujian's HTML notes</h1>
-        <p>I took some notes from CS50 examples, which demonstrate some basic usage of various html features.</p>
+        <p class = "large">I took some notes from CS50 examples, which demonstrate some basic usage of various html features.</p>
 
         <h2>Unordered list</h2>
         <ul>
@@ -57,7 +64,7 @@
         <h2>Links</h2>
         Visit CS50 <a href="https://www.youtube.com/watch?v=ciz2UaifaNM&list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4&index=10&ab_channel=CS50">Lecture 8 - HTML, CSS, JavaScript</a>
         <p>
-            This <a href = "https://validator.w3.org/">website</a> validates the html code.
+            This <a href = "https://validator.w3.org/" id="validator">website</a> validates the html code.
         </p>
 
 
@@ -69,7 +76,7 @@
 
         <h2>Register an email</h2>
         <form>
-            <input autocomplete="off" autofocus name="email" pattern=".+@.+\.edu" placeholder="Email" type="email">
+            <input autocomplete="off" name="email" pattern=".+@.+\.edu" placeholder="Email" type="email">
             <button>Register</button>
         </form>
 
